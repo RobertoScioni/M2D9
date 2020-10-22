@@ -1,9 +1,9 @@
 body {
 	background-color: rgb(31, 31, 31);
 }
-.album-container {
+/*.album-container {
 	height: 100%;
-}
+}*/
 .worst-container {
 	max-height: 50%;
 }

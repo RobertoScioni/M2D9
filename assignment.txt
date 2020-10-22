@@ -10,7 +10,7 @@
             Foreach album in the favorite list, place the genre inside a badge
         -->
 
-    <!-- EXERCISE 4 half done in day 2
+    <!-- EXERCISE 4 half done in day 2 done
             Foreach album in the favorite list, use the Bootstrap Card to contain it.
             Use card layouts to format it in the best and more compatible way.
         -->

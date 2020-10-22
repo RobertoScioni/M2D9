@@ -133,15 +133,18 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - 2 albums per row when you are on a small screen
         -->
 		<div id="favorite albums">
+            <!--EX4 a soft refactoring-->
 			<div class="card-deck">
 					<div class="album-container card">
 						<img
 							class="album-cover card-img-top"
 							src="images/Rhapsody_symphony_of_the_enchanted_lands.jpg"
 						/>
-						<h3 class="album-title">symphony of the enchanted lands</h3>
-						<p class="album-authors">Rhapsodhy of Fire</p>
-                        <p class="album-lenght">55:42</p>
+                        <h5 class="album-title card-title">symphony of the enchanted lands</h5>
+                        <div class="card-body">
+						    <p class="album-authors">Rhapsodhy of Fire</p>
+                            <p class="album-lenght">55:42</p>
+                        </div>
                         <div class="card-footer">
                             <p class="album-genre badge badge-primary">Symphonic Metal</p>
                         </div>
@@ -173,9 +176,11 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                 
 					<div class="album-container card ">
 						<img class="album-cover card-img-top" src="images/Visions_-_Stratovarius2.jpg" />
-						<h3 class="album-title">Visions</h3>
-						<p class="album-authors">Stratovarius</p>
-                        <p class="album-lenght">61:01</p>
+                        <h5 class="album-title card-title">Visions</h5>
+                        <div class="card-body">
+						    <p class="album-authors">Stratovarius</p>
+                            <p class="album-lenght">61:01</p>
+                        </div>
                         <div class="card-footer">
                             <p class="album-genre badge badge-primary">Power Metal</p>
                         </div>
@@ -195,9 +200,11 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 				
 					<div class="album-container card">
 						<img class="album-cover card-img-top" src="images/SonataArctica_Ecliptica.jpg" />
-						<h3 class="album-title">Ecliptica</h3>
-						<p class="album-authors">Sonata Arctica</p>
-                        <p class="album-lenght">47:11</p>
+                        <h5 class="album-title card-title">Ecliptica</h5>
+                        <div class="card-body">
+						    <p class="album-authors">Sonata Arctica</p>
+                            <p class="album-lenght">47:11</p>
+                        </div>
                         <div class="card-footer">
                             <p class="album-genre badge badge-primary">Power Metal</p>
                         </div>
@@ -217,9 +224,11 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 				
 					<div class="album-container card">
 						<img class="album-cover card-top-img" src="images/Europe-the_final_countdown.jpg" />
-						<h3 class="album-title">The Final Countdown</h3>
-						<p class="album-authors">Europe</p>
-                        <p class="album-lenght">39:58</p>
+                        <h5 class="album-title card-title">The Final Countdown</h5>
+                        <div class="card-body">
+						    <p class="album-authors">Europe</p>
+                            <p class="album-lenght">39:58</p>
+                        </div>
                         <div class="card-footer">
                             <p class="album-genre badge badge-primary">Glam Metal</p>
                         </div>
@@ -396,6 +405,14 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 
 
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-1 track-number"></div>
+                </div>
+
+            </div>
+
+
 		<!-- OLD EXERCISE 8
             Implement a footer with some information / social links
         -->
