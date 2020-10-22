@@ -1,0 +1,24 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.track {
+	min-height: 2rem;
+	height: 2rem;
+	border-width: 0;
+	color: antiquewhite;
+}
+
+.track .col {
+	background: lightslategray;
+}
+.track:nth-child(even) .col:nth-child(even) {
+	background-color: antiquewhite;
+	color: darkslategrey;
+}
+.track:nth-child(odd) .col:nth-child(odd) {
+	background-color: antiquewhite;
+	color: darkslategrey;
+}
