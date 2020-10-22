@@ -66,7 +66,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
         <link rel="stylesheet" href="M2-D9.css">
 	</head>
 	<body>
-		<!-- EXERCISE 2 
+		<!-- OLD EXERCISE 2 
             Implement a navigation bar using the bootstrap component
             This navigation bar must be linked to every section in your page
         -->
@@ -99,27 +99,52 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 				</ul>
 				<!--span class="navbar-text"> Navbar text with an inline element </span-->
 			</div>
-		</nav>
+        </nav>
+        <!--NEW Exercise 1-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Music-Library</li>
+            </ol>
+          </nav>
+        <!--New Exercise 2: the jumbotron-->
 
-		<!-- EXERCISE 3
+        <div class="jumbotron p-0">
+            <div class="view overlay rounded-top">
+                <h1 class="display-4">My music tastes</h1>
+                <img src="images/jumbo.jpg" class="img-fluid" alt="music spectrography artistic rendition">
+                <a href="#">
+                <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+                
+                <p class="lead">in this site we expose my musical tastes or lack thereof</p>
+                <p>I'm mostly in Power/fantasy/Symphonic metal with excursion in classic rock and j-rock</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <div class="card-body text-center mb-3">
+            </div>
+        </div>
+
+		<!-- OLD EXERCISE 3
             Create a responsive section for your favourite albums.
             In this section you should have:
             - 4 albums per row when the screen is very large
             - 3 albums per row when you are on a tablet (or a smaller window)
             - 2 albums per row when you are on a small screen
         -->
-		<div id="favorite albums" class="container">
-			<div class="row">
-				<div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+		<div id="favorite albums">
+			<div class="card-deck">
 					<div class="album-container card">
 						<img
 							class="album-cover card-img-top"
 							src="images/Rhapsody_symphony_of_the_enchanted_lands.jpg"
 						/>
-						<h5 class="album-title">symphony of the enchanted lands</h3>
+						<h3 class="album-title">symphony of the enchanted lands</h3>
 						<p class="album-authors">Rhapsodhy of Fire</p>
-						<p class="album-lenght">55:42</p>
-						<p class="album-genre">Symphonic Metal</p>
+                        <p class="album-lenght">55:42</p>
+                        <div class="card-footer">
+                            <p class="album-genre badge badge-primary">Symphonic Metal</p>
+                        </div>
 						<!--ol class="album-Tracklist list-group ">
                             <li class="list-group-item">"Epicus Furor" ("Epic Fury")	1:15</li>
                             <li class="list-group-item">"Emerald Sword"	4:21
@@ -145,14 +170,15 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                             </li>
                         </ol-->
 					</div>
-				</div>
-				<div class="col col-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="album-container card">
+                
+					<div class="album-container card ">
 						<img class="album-cover card-img-top" src="images/Visions_-_Stratovarius2.jpg" />
 						<h3 class="album-title">Visions</h3>
 						<p class="album-authors">Stratovarius</p>
-						<p class="album-lenght">61:01</p>
-						<p class="album-genre">Power Metal</p>
+                        <p class="album-lenght">61:01</p>
+                        <div class="card-footer">
+                            <p class="album-genre badge badge-primary">Power Metal</p>
+                        </div>
 						<!--ol class="album-Tracklist list-group">
                             <li class="list-group-item">"The Kiss of Judas"</li>
                             <li class="list-group-item">"Black Diamond"</li>
@@ -166,14 +192,15 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                             <li class="list-group-item">"Visions (Southern Cross)"</li>
                         </ol-->
 					</div>
-				</div>
-				<div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+				
 					<div class="album-container card">
 						<img class="album-cover card-img-top" src="images/SonataArctica_Ecliptica.jpg" />
 						<h3 class="album-title">Ecliptica</h3>
 						<p class="album-authors">Sonata Arctica</p>
-						<p class="album-lenght">47:11</p>
-						<p class="album-genre">Power Metal</p>
+                        <p class="album-lenght">47:11</p>
+                        <div class="card-footer">
+                            <p class="album-genre badge badge-primary">Power Metal</p>
+                        </div>
 						<!--ol class="album-Tracklist list-group">
                             <li class="list-group-item">"Blank File"</li>
                             <li class="list-group-item">"My Land"</li>
@@ -187,14 +214,15 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                             <li class="list-group-item">"Destruction Preventer"</li>
                         </ol-->
 					</div>
-				</div>
-				<div class="col col-12 col-sm-6 col-md-4 col-lg-3">
+				
 					<div class="album-container card">
 						<img class="album-cover card-top-img" src="images/Europe-the_final_countdown.jpg" />
 						<h3 class="album-title">The Final Countdown</h3>
 						<p class="album-authors">Europe</p>
-						<p class="album-lenght">39:58</p>
-						<p class="album-genre">Glam Metal</p>
+                        <p class="album-lenght">39:58</p>
+                        <div class="card-footer">
+                            <p class="album-genre badge badge-primary">Glam Metal</p>
+                        </div>
 						<!--ol class="album-Tracklist list-group">
                             <li class=list-group-item>side one
                                 <ol class="list-group">
@@ -220,7 +248,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 			</div>
 		</div>
 
-		<!-- EXERCISE 4
+		<!-- OLD EXERCISE 4
             Create a section for the album review.
             Pick one of your fav albums, and create a section with:
             - Cover
@@ -269,7 +297,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     </ol>
                 </div>
             
-            <!-- EXERCISE 5
+            <!-- OLD EXERCISE 5
                 Worst album list! Find out the music you don't really like or you find overrated and list it
                 in this "hall of shame" chart!
             -->
@@ -322,7 +350,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                 </div>
             </div>
         </div>
-		<!-- EXERCISE 6
+		<!-- OLD EXERCISE 6
             Do you have any musician / band you admire or you are fan of?
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
@@ -332,7 +360,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     my first metal albums were lent to me by a dear friend during high school and are all on this page
                     i do not have a very strong musical taste but i have a preference towards rock and metal.
             </div>
-		<!-- EXERCISE 7
+		<!-- OLD EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
             Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
@@ -368,24 +396,24 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 
 
             </div>
-		<!-- EXERCISE 8
+		<!-- OLD EXERCISE 8
             Implement a footer with some information / social links
         -->
         <footer>
             <a href="https://www.facebook.com/rhapsodyoffire/">facebook page of the Rhapsody of fire band</a>
         </footer>
-		<!-- EXTRA:
-         EXERCISE 9
-            Create album details that are going to be toggled on and off by clicking on the album image
-        -->
+		<!-- EXTRA:-->
+            <!--OLD EXERCISE 9
+                Create album details that are going to be toggled on and off by clicking on the album image
+            -->
 
-		<!-- EXERCISE 10
-            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible)
-        -->
+            <!-- OLD EXERCISE 10
+                Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible)
+            -->
 
-		<!--
-            EXERCISE 11
-            Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
-        -->
+            <!--
+                OLD EXERCISE 11
+                Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
+            -->
 	</body>
 </html>
