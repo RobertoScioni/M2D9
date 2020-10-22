@@ -33,18 +33,3 @@ body {
 .best-and-worst {
 	height: fit-content;
 }
-
-.successfully-removed.hide-opacity {
-	opacity: 0;
-}
-
-.successfully-deleted {
-	color: #ffffff;
-	text-align: center;
-	transition: opacity 3s ease-in-out;
-	-webkit-transition: opacity 3s ease-in-out;
-	-moz-transition: opacity 3s ease-in-out;
-	-ms-transition: opacity 3s ease-in-out;
-	-o-transition: opacity 3s ease-in-out;
-	opacity: 1;
-}

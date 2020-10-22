@@ -5,6 +5,7 @@ const load = () => {
 }
 
 const remove = (E) => {
-	alert(E.target.parentElement.innerHTML)
+	E.target.parentElement.classList.add("deleted")
+	alert(E.target.parentElement.classList)
 }
 window.onload = load
